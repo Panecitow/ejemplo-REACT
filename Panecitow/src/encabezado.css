@@ -1,5 +1,6 @@
 .encabezadoDiv {
-    background-color: #5d8e8a;
+    /*background-color: #5d8e8a;*/
+    background: linear-gradient(to right, #00f2fe 15%, #5d8e8a  );
     padding: 10px 40px;
     display: flex;
     align-items: center;
@@ -32,6 +33,11 @@
     cursor: pointer;
     border-radius: 4px;
     
+}
+
+.menuDiv ul li:hover {
+    background-color: #416968;
+    color: #bec8d1;
 }
 
 .redesDiv ul {
