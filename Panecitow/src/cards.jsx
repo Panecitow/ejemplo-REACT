@@ -1,10 +1,14 @@
 import './cards.css';
-import PropTypes from 'prop-types'; 
+import PropTypes from 'prop-types';
+import AcercaDe from './menuViews/AcercaDe';
+import Contacto from './menuViews/Contacto';
+import Galeria from './menuViews/Galeria';
+import Productos from './menuViews/Productos';
+import Sucursales from './menuViews/Sucursales'; 
 
 import imgCard1 from './assets/cardsIcons/miku-card01.jpg';
 import imgCard2 from './assets/cardsIcons/teto-card.jpg';
-import imgCard3 from './assets/cardsIcons/neru-card.jpg';     
-
+import imgCard3 from './assets/cardsIcons/neru-card.jpg';  
 
 function Target(props){
     return(
@@ -19,20 +23,6 @@ function Target(props){
 }
 
 function Inicio(){
-    return <h2>Bienvenido a la página de Inicio</h2>;
-}
-
-function AcercaDe(){
-    return <h2>Acerca De Nosotros</h2>;
-}
-
-function Productos(){
-    return(
-        <h2>Lista de Productos</h2>
-    );
-}
-
-function Galeria(){
     return(
         <div className='cardsDiv'> 
             <Target 
@@ -54,13 +44,8 @@ function Galeria(){
     );
 }
 
-function Sucursales(){
-    return <h2>Nuestras Sucursales</h2>;
-}
 
-function Contacto(){
-    return <h2>Formulario de Contacto</h2>;
-}
+
 
 function ContenedorCards({ vista }){
     

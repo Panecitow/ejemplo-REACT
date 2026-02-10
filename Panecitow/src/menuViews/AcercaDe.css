@@ -1,0 +1,146 @@
+h2{
+    text-shadow: none;
+}
+
+p{
+    text-shadow: none;
+}
+
+h1{
+    text-shadow: none;
+}
+
+h3{
+    text-shadow: none;
+}
+
+:root {
+    --miku-cyan: #39D5E0;
+    --teto-red: #FF66AA;
+    --bg-card: rgba(255, 255, 255, 0.9);
+}
+
+.about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: none;
+}
+
+.about-header h1 {
+    font-size: 3.5rem;
+    color: var(--miku-cyan);
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 0px var(--teto-red); /* Efecto Pop 3D */
+    letter-spacing: 2px;
+    
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 50px;
+    font-style: italic;
+    text-shadow: none;
+}
+
+/* Grid para las tarjetas */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* Estilo de las Tarjetas */
+.info-card {
+    background: var(--bg-card);
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 30px rgba(57, 213, 224, 0.15);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    text-shadow: none;
+}
+
+.info-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--miku-cyan);
+    box-shadow: 0 15px 40px rgba(57, 213, 224, 0.3);
+}
+
+/* Iconos flotantes */
+.icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    background: #E0FCFF;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info-card h2 {
+    color: var(--teto-red);
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    text-shadow: none;
+}
+
+.info-card p {
+    color: #444;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    text-shadow: none;
+}
+
+/* Tarjeta especial para el disclaimer (Who are we) */
+.warning-card:hover {
+    border-color: var(--teto-red); /* Borde rosa para diferenciar */
+}
+
+.legal-section {
+    margin-top: 60px;
+    padding: 30px;
+    background-color: #f8f9fa; /* Gris muy claro, casi blanco */
+    border-top: 4px solid var(--dark-text); /* Una línea superior sólida y seria */
+    border-radius: 10px;
+    text-align: left;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.legal-section h3 {
+    color: var(--dark-text);
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    text-shadow: none;
+}
+
+.legal-content p {
+    font-size: 0.85rem; /* Letra un poco más pequeña, estilo contrato */
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    text-shadow: none;
+}
+
+.legal-content strong {
+    color: #333; /* Resaltar los títulos de cada cláusula */
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.8rem;
+    color: var(--miku-cyan);
+    font-weight: bold;
+}
