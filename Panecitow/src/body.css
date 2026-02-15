@@ -2,7 +2,7 @@
 .bodyDiv {
     background-image: url('./assets/bodyImages/bodyWallpaper.png');
     background-repeat: repeat; 
-    height: 80vh;
+    height: auto;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -19,6 +19,7 @@
     flex-direction: column;
     gap: 20px;
     max-width: 80%; 
+    margin: 20px;
 }
 
 /* Ajustes de texto para que se vean bien DENTRO de la caja blanca */
